@@ -25,6 +25,8 @@ I also have a pre-built docker image at `suvojit0x55aa/celeba-hq`. You can just 
 docker run -it -v $(pwd):/data suvojit0x55aa/celeba-hq
 ```
 ## Running it locally
+If you choose to go through the more involved path for whatever reason follow the steps below:
+
 1) Clone the repository
 ```
 git clone https://github.com/suvojit-0x55aa/celebA-HQ-dataset-download.git
