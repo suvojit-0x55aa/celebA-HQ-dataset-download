@@ -13,8 +13,8 @@ The size of the final dataset is 89G. However, you will need a bit more storage 
 # Usage
 1) Clone the repository
 ```
-git clone https://github.com/nperraud/download-celebA-HQ.git
-cd download-celebA-HQ
+git clone https://github.com/suvojit-0x55aa/celebA-HQ-dataset-download.git
+cd celebA-HQ-dataset-download
 ```
 
 2) Install necessary packages (Because specific versions are required Conda is recomended)
