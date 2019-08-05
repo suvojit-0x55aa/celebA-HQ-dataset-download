@@ -13,14 +13,14 @@ The size of the final dataset is 89G. However, you will need a bit more storage 
 # Usage
 ## Docker
 
-If you have Docker installed, skip the previous installation steps and run the following command from the root directory of this project:
+If you have Docker installed, run the following command from the root directory of this project:
 
 `docker build -t celeba-hq . && docker run -it -v $(pwd):/data celebahq`
 
 By default, this will create the dataset in same directory. To put it elsewhere, replace `$(pwd)` with the absolute path to the desired output directory.
 
 ### Prebuilt Docker Image
-I also have a pre-built docker image at `suvojit0x55aa/celeba-hq`. You can just run docker run without cloning the repo even ! 
+I also have a pre-built docker image at `suvojit0x55aa/celeba-hq`. You can just docker run without cloning the repo even ! 
 ```
 docker run -it -v $(pwd):/data suvojit0x55aa/celeba-hq
 ```
