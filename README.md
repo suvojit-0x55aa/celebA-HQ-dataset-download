@@ -11,6 +11,20 @@ To get the celebA-HQ dataset, you need to
 The size of the final dataset is 89G. However, you will need a bit more storage to be able to run the scripts.
 
 # Usage
+## Docker
+
+If you have Docker installed, skip the previous installation steps and run the following command from the root directory of this project:
+
+`docker build -t celeba-hq . && docker run -it -v $(pwd):/data celebahq`
+
+By default, this will create the dataset in same directory. To put it elsewhere, replace `$(pwd)` with the absolute path to the desired output directory.
+
+### Prebuilt Docker Image
+I also have a pre-built docker image at `suvojit0x55aa/celeba-hq`. You can just run docker run without cloning the repo even ! 
+```
+docker run -it -v $(pwd):/data suvojit0x55aa/celeba-hq
+```
+## Running it locally
 1) Clone the repository
 ```
 git clone https://github.com/suvojit-0x55aa/celebA-HQ-dataset-download.git
@@ -42,19 +56,6 @@ where `<dir_to_save_files>` is the directory where you wish the data to be saved
 
 4) Go watch a movie, theses scripts will take a few hours to run depending on your internet connection and your CPU power. By default the script will launch as many jobs as you have cores on your CPU. If you want to change this behaviour change the `create_celebA-HQ.sh` script. The final HQ images will be saved as `.jpg` files in the `<dir_to_save_files>/celeba-hq` folder.
 
-## Docker
-
-If you have Docker installed, skip the previous installation steps and run the following command from the root directory of this project:
-
-`docker build -t celeba-hq . && docker run -it -v $(pwd):/data celebahq`
-
-By default, this will create the dataset in same directory. To put it elsewhere, replace `$(pwd)` with the absolute path to the desired output directory.
-
-### Prebuilt Docker Image
-I also have a pre-built docker image at `suvojit0x55aa/celeba-hq`. You can just run docker run without cloning the repo even ! 
-```
-docker run -it -v $(pwd):/data suvojit0x55aa/celeba-hq
-```
 # Pre-Calculated Dataset
 This script generated the dateset with original names from CelebA. If you're okay with a version of the dataset that is named index wise you can save a lot of time and effort and download it from this convenient [Google Drive link](https://drive.google.com/drive/folders/11Vz0fqHS2rXDb5pprgTjpD7S2BAJhi1P?usp=sharing).
 # Remark
