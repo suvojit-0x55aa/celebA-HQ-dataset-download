@@ -37,7 +37,6 @@ cd celebA-HQ-dataset-download
 3) Run the scripts
 ```
 ./create_celebA-HQ.sh <dir_to_save_files>
-
 ```
 where `<dir_to_save_files>` is the directory where you wish the data to be saved.
 
@@ -52,13 +51,14 @@ If you have Docker installed, skip the previous installation steps and run the f
 By default, this will create the dataset in same directory. To put it elsewhere, replace `$(pwd)` with the absolute path to the desired output directory.
 
 ### Prebuilt Docker Image
-I also have a pre-built docker image at `suvojit0x55aa/celeba-hq`. You can just run `docker run without cloning the repo even ! 
+I also have a pre-built docker image at `suvojit0x55aa/celeba-hq`. You can just run docker run without cloning the repo even ! 
 ```
 docker run -it -v $(pwd):/data suvojit0x55aa/celeba-hq
 ```
-
+# Pre-Calculated Dataset
+This script generated the dateset with original names from CelebA. If you're okay with a version of the dataset that is named index wise you can save a lot of time and effort and download it from this convenient [Google Drive link](https://drive.google.com/drive/folders/11Vz0fqHS2rXDb5pprgTjpD7S2BAJhi1P?usp=sharing).
 # Remark
-This script is likely to break somewhere, but if it executes until the end, you should obtain the correct dataset.
+This script has lot of specific dependencies and is likely to break somewhere, but if it executes until the end, you should obtain the correct dataset. However the docker is pretty fool-proof, so do use it if you can.
 
 # Sources
 This code is inspired by these files
