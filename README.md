@@ -65,11 +65,11 @@ This script has lot of specific dependencies and is likely to break somewhere, b
 
 # Sources
 This code is inspired by these files
-* https://github.com/tkarras/progressive_growing_of_gans/blob/master/dataset_tool.py
-* https://github.com/andersbll/deeppy/blob/master/deeppy/dataset/celeba.py
-* https://github.com/andersbll/deeppy/blob/master/deeppy/dataset/util.py
-* https://github.com/nperraud/download-celebA-HQ
-* https://github.com/willylulu/celeba-hq-modified
+* [tkarras/progressive_growing_of_gans/dataset_tool.py](https://github.com/tkarras/progressive_growing_of_gans/blob/master/dataset_tool.py)
+* [andersbll/deeppy/celeba.py](https://github.com/andersbll/deeppy/blob/master/deeppy/dataset/celeba.py)
+* [andersbll/deeppy/util.py](https://github.com/andersbll/deeppy/blob/master/deeppy/dataset/util.py)
+* [nperraud/download-celebA-HQ](https://github.com/nperraud/download-celebA-HQ)
+* [willylulu/celeba-hq-modified](https://github.com/willylulu/celeba-hq-modified)
 
 # Citing the dataset
 You probably want to cite the paper "Progressive Growing of GANs for Improved Quality, Stability, and Variation" that was submitted to ICLR 2018 by Tero Karras (NVIDIA), Timo Aila (NVIDIA), Samuli Laine (NVIDIA), Jaakko Lehtinen (NVIDIA and Aalto University).
